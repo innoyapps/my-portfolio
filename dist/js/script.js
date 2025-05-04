@@ -34,3 +34,18 @@ function emailCopy() {
     }, 1000);
   });
 }
+
+function seeMore() {
+  const seeMoreSection = document.getElementById("seemore");
+  const btnSeeMore = document.getElementById("btn-see-more");
+
+  if (seeMoreSection.style.display === "none" || !seeMoreSection.style.display) {
+    seeMoreSection.style.display = "flex";
+    seeMoreSection.style.animation = "fadeIn 0.5s ease forwards";
+    btnSeeMore.textContent = "See Less..";
+  } else {
+    seeMoreSection.style.display = "none";
+    btnSeeMore.textContent = "See More..";
+  }
+  AOS.refresh();
+}

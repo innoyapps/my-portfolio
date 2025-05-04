@@ -407,9 +407,13 @@
 
 .projects .big-projects {
   margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects .big-projects h1 {
+  font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -420,6 +424,34 @@
   column-gap: 20px;
   row-gap: 50px;
   justify-content: center;
+}
+.projects .big-projects .see-more {
+  display: none;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.projects .big-projects #btn-see-more {
+  margin-top: 50px;
+  padding: 10px 15px;
+  border: none;
+  color: var(--color-black);
+  font-size: 16px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.projects .big-projects #btn-see-more:hover {
+  padding: 10px 15px;
+  border: none;
+  color: var(--color-black);
+  font-size: 16px;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .projects .big-projects .big-projects-box .box {
